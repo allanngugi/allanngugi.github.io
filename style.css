@@ -314,3 +314,68 @@ body.page-exit {
     opacity: 0;
     transform: translateY(-10px);
 }
+
+```css
+/* ------------------------------
+Header Navigation
+--------------------------------*/
+
+/* Used by Resume, Projects and Contact */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+
+    background: #020617;
+    border-bottom: 1px solid #1e293b;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    padding: 0;
+    background: transparent;
+    border-bottom: none;
+
+    position: static;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #38bdf8;
+}
+
+/* Light mode */
+body.light header {
+    background: #f5f5f5;
+    border-bottom: 1px solid #cbd5e1;
+}
+
+body.light header nav a {
+    color: #111827;
+}
+
+body.light header nav a:hover {
+    color: #0ea5e9;
+}
+```
